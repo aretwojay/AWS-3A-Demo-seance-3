@@ -1,0 +1,8 @@
+crontab -e
+
+
+______
+
+
+
+0 3 * * * cd /Users/zhen/Cours/demo && docker compose run --rm certbot renew && docker compose exec nginx nginx -s reload
